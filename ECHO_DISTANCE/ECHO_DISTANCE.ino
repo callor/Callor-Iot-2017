@@ -25,7 +25,13 @@ void loop() {
   Serial.print(distance);
   Serial.println("cm");
 
+  if(distance < 20) {
+    tone(5,520,300);
+  }
   delay(500);
+
+  
+  
 }
 
 
